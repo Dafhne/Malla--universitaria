@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Ingeniería en Prevención de Riesgos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #c71585;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    td {
+      padding: 12px;
+      border: 1px solid #e6a8cf;
+      background-color: #fbd6eb;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    td.completed {
+      text-decoration: line-through;
+      background-color: #ffd6f0;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular - UST</h1>
+  <table>
+    <tr>
+      <td onclick="toggle(this)">Matemática I</td>
+      <td onclick="toggle(this)">Comunicación Efectiva</td>
+      <td onclick="toggle(this)">Prevención de Riesgos I</td>
+    </tr>
+    <tr>
+      <td onclick="toggle(this)">Química</td>
+      <td onclick="toggle(this)">Legislación Laboral</td>
+      <td onclick="toggle(this)">Computación Aplicada</td>
+    </tr>
+    <!-- Agrega más filas y ramos según necesites -->
+  </table>
+
+  <script>
+    function toggle(element) {
+      element.classList.toggle("completed");
+    }
+  </script>
+</body>
+</html>
